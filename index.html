@@ -3,54 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InvescaInsights</title>
+    <title>Invesca Insights</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">InvescaInsights</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="padding-left: 15px;">Invesca Insights</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Dark Mode Toggle -->
+            <div class="form-check form-switch ms-auto">
+                <input class="form-check-input" type="checkbox" id="themeSwitch">
+                <label class="form-check-label" for="themeSwitch">Dark Mode</label>
+            </div>
         </div>
     </nav>
 
-    <!-- Header Section -->
-    <header class="jumbotron text-center bg-primary text-white p-5">
-        <h1>Welcome to InvescaInsights</h1>
-        <p>Your partner in financial literacy and investment insights</p>
+    <!-- Header Section with Carousel -->
+    <header id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/image4.jpg" class="d-block w-100 carousel-image" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Welcome to Invesca Insights</h1>
+                    <p>Your partner in financial literacy and investment insights</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/image5.jpg" class="d-block w-100 carousel-image" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Empowering Financial Literacy</h1>
+                    <p>Providing the tools for informed financial decision-making</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/image6.jpg" class="d-block w-100 carousel-image" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Customized Investment Insights</h1>
+                    <p>Helping you make data-driven financial decisions</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </header>
+    
 
     <!-- About Section -->
     <section id="about" class="container my-5">
         <h2>About Us</h2>
         <p>We provide tailored solutions in financial education and investment with a focus on customizable analytics and data-driven insights.</p>
+        <p class="lead text-center">At Invesca Insights, we are dedicated to empowering individuals with the knowledge and tools they need to make informed financial decisions. Whether you're new to finance or looking to enhance your investment strategies, our services are designed to help you navigate the complexities of managing your wealth.</p>
+    
+        <p class="text-center">We specialize in a wide range of services, including financial education, portfolio management, and innovative solutions for emerging sectors like cryptocurrency and sustainable agriculture. Our goal is to provide tailored financial strategies that foster long-term success for our clients, from young learners to experienced investors.</p>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="container my-5">
-        <h2>Our Services</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <h3>Educational Insights</h3>
-                <p>Empowering users through accessible financial education.</p>
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Our Services</h2>
+                <p>Explore the range of services we offer to empower financial literacy and investment insights.</p>
             </div>
-            <div class="col-md-4">
-                <h3>Customized Graphs</h3>
-                <p>Visual data insights to guide informed investment decisions.</p>
+            <div class="row">
+                <!-- Service 1 -->
+                <div class="col-md-4 text-center">
+                    <img src="img/service1.jpg" class="service-image img-fluid mb-3" alt="Financial Education">
+                    <h3>Financial Education</h3>
+                    <p>Interactive tools to teach financial responsibility and literacy for children and young adults.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-md-4 text-center">
+                    <img src="img/service2.jpg" class="service-image img-fluid mb-3" alt="Investment Insights">
+                    <h3>Investment Insights</h3>
+                    <p>Customized graphs and insights to help users make informed investment decisions.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-md-4 text-center">
+                    <img src="img/service3.jpg" class="service-image img-fluid mb-3" alt="Agricultural Technology">
+                    <h3>Agricultural Technology</h3>
+                    <p>Innovative solutions for managing financial aspects of agricultural projects and technology.</p>
+                </div>
             </div>
-            <div class="col-md-4">
-                <h3>Investment Solutions</h3>
-                <p>Portfolio management tools designed for impactful investing.</p>
-            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5" class="jumbotron text-center bg-primary text-white p-5">
+        <div class="container">
+            <h1>Our Portfolio</h1>
+            <p>Explore our diverse projects and investment opportunities designed for growth and innovation.</p>
+            <button type="button" class="btn btn-primary">Go to Portfolio</button>
         </div>
     </section>
 
@@ -76,9 +137,10 @@
 
     <!-- Footer -->
     <footer class="text-center py-4">
-        <p>&copy; 2024 InvescaInsights. All rights reserved.</p>
+        <p>&copy; 2024 Invesca Insights. All rights reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

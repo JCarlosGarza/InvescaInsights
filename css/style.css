@@ -1,3 +1,5 @@
+/* Light Theme (default) styles are as they are */
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -10,3 +12,62 @@ body {
 footer {
     background-color: #f8f9fa;
 }
+
+/* Carousel images styling */
+.carousel-image {
+    max-height: 80vh;            /* Adjust height as needed */
+    object-fit: cover;            /* Ensure images cover the container */
+    filter: brightness(70%);      /* Add some transparency for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Add shadow for depth */
+}
+
+/* Carousel text styles */
+.carousel-caption h1, .carousel-caption p {
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Optional: Media query for smaller screens */
+@media (max-width: 768px) {
+    .carousel-image {
+        max-height: 60vh;
+    }
+}
+
+/* Styling for service images */
+.service-image {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.service-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Dark Theme */
+.dark-theme {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.dark-theme header, .dark-theme footer, .dark-theme .carousel-item {
+    background-color: #1a1a1a;
+}
+
+.dark-theme h2, .dark-theme h3, .dark-theme h4, .dark-theme .navbar-brand {
+    color: #ffffff;
+}
+
+/* Apply dark theme colors to all components when .dark-theme is active */
+.dark-theme #services {
+    background-color: #1e1e1e;
+}
+
+.dark-theme .btn-primary {
+    /* background-color: #333333; */
+    color: #ffffff;
+}
+
+/* Add additional dark theme styles as needed */
+
