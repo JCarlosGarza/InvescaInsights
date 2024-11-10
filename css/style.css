@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.jumbotron {
+    background: #007bff;
+    color: white;
+}
+
+footer {
+    background-color: #f8f9fa;
+}
